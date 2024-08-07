@@ -116,7 +116,7 @@
             >;
         };
 
-        raise_layer {
+        raise_layer-1 {
             bindings = <
 &kp ESC    &kp PAGE_DOWN     &kp PAGE_DOWN            &kp UP_ARROW            &kp PAGE_UP        &kp DEL          &kp PLUS   &kp N7        &kp N8        &kp N9        &kp ASTRK   &kp BSPC
 &kp LALT   &kp SPACE         &kp LEFT_ARROW           &kp DOWN_ARROW          &kp RIGHT          &kp BACKSPACE    &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH   &kp COLON
@@ -125,7 +125,7 @@
             >;
         };
 
-        lower_layer {
+        lower_layer-2 {
             bindings = <
 &kp ESC  &kp EXCL   &kp AT     &kp HASH           &kp DOLLAR     &kp PERCENT         &kp PLUS  &kp AMPERSAND  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH  &kp BSPC
 &trans   &kp TILDE  &kp CARET  &kp APOS           &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT  &kp DOWN       &kp UP          &kp RIGHT        &kp PIPE       &kp SINGLE_QUOTE
