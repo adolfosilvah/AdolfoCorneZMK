@@ -15,7 +15,7 @@
         Backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
-        };
+        }; 
 
         Copiar {
             bindings = <&kp LC(C)>;
