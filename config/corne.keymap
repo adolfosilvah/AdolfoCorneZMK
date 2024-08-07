@@ -21,6 +21,26 @@
             bindings = <&mo 4>;
             key-positions = <37 40>;
         };
+
+        Copiar {
+            bindings = <&kp LC(C)>;
+            key-positions = <3 2>;
+        };
+
+        Pegar {
+            bindings = <&kp LC(V)>;
+            key-positions = <14 15>;
+        };
+
+        PegaTex {
+            bindings = <&kp LS(LC(V))>;
+            key-positions = <26 27>;
+        };
+
+        Capa5 {
+            bindings = <&mo 5>;
+            key-positions = <37 41>;
+        };
     };
 
     behaviors {
@@ -51,32 +71,25 @@
             label = "CLAVE";
         };
 
-        HojaLeft: HojaLeft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "HOJALEFT";
-        };
-
-        HojaRight: HojaRight {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "HOJARIGHT";
-        };
-
         PantallaCompleta: PantallaCompleta {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LALT &kp Z &kp R &kp M &kp M &kp RET>;
             label = "PANTALLACOMPLETA";
         };
 
         PantallaNormal: PantallaNormal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LEFT_ALT &kp Z &kp R &kp M &kp RET>;
             label = "PANTALLANORMAL";
+        };
+
+        ActualizarT: ActualizarT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp D &kp K &kp N1 &kp A>;
+            label = "ACTUALIZART";
         };
     };
 
@@ -123,9 +136,9 @@
 
         layer_4 {
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &kp HOME    &trans  &trans           &trans             &trans            &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans      &trans  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE  &trans  &trans
-&kp LCTRL  &trans  &trans  &trans  &trans  &kp END     &trans  &kp DEL          &kp C_MUTE         &kp K_CALC        &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &kp HOME    &Clave  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans            &trans  &PantallaCompleta
+&none      &none   &none   &none   &none   &none       &trans  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE  &trans  &PantallaNormal
+&kp LCTRL  &none   &trans  &none   &none   &kp END     &trans  &kp DEL          &kp C_MUTE         &kp K_CALC        &trans  &trans
                            &trans  &trans  &trans      &trans  &trans           &trans
             >;
         };
