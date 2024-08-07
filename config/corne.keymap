@@ -57,10 +57,10 @@
 
         raise_layer {
             bindings = <
-&kp ESC    &kp PAGE_DOWN  &kp PAGE_DOWN   &kp UP_ARROW    &kp PAGE_UP  &kp DEL          &kp PLUS   &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LALT   &kp SPACE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT    &kp BACKSPACE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LCTRL  &trans         &trans          &trans          &trans       &kp LG(LS(S))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                          &kp LGUI        &trans       &kp SPACE        &kp RET    &trans     &trans
+&kp ESC    &kp PAGE_DOWN     &kp PAGE_DOWN            &kp UP_ARROW            &kp PAGE_UP        &kp DEL          &kp PLUS   &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LALT   &kp SPACE         &kp LEFT_ARROW           &kp DOWN_ARROW          &kp RIGHT          &kp BACKSPACE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LCTRL  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &kp LG(LS(S))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                                      &kp LGUI                &trans             &kp SPACE        &kp RET    &trans     &trans
             >;
         };
 
