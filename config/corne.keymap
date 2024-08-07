@@ -16,6 +16,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
         };
+
+        Capa3 {
+            bindings = <&mo 3>;
+            key-positions = <37 40>;
+        };
     };
 
     behaviors {
