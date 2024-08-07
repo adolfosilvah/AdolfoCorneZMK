@@ -53,7 +53,9 @@
         Clave: Clave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOWN &kp LS(F) &kp A &kp B &kp I &kp A &kp N &kp DOT &kp N1 &kp N6 &kp ENTER>;
+            bindings = <&kp DOWN>
+                    , <&macro_wait_time 500>
+                    ,<&kp LS(F) &kp A &kp B &kp I &kp A &kp N &kp DOT &kp N1 &kp N6 &kp ENTER>;
             label = "CLAVE";
         };
 
